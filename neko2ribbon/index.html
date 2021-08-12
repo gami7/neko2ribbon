@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ねこにりぼん</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- アルファベットのフォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <!-- 日本語のフォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+  <!-- Swiperの読み込み -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+  <div class="bg-opacity"></div>
+  <!-- ヘッダー -->
+  <header>
+    <!-- ロゴ -->
+    <div class="logo">
+      <img src="icons/logo_border.png">
+    </div>
+    <div class="logo-shadow">
+      <img src="icons/logo_shadow.png">
+    </div>
+    <!-- 旗上半分 -->
+    <div class="top-frag-top">
+      <img src="icons/top-frag-top.png">
+    </div>
+    <!-- サブナビゲーション -->
+    <a href="#" class="mypage" ><img src="icons/mypage.png"></a>
+    <a href="#" class="guide"><img src="icons/guide.png"></a>
+    <a href="#" class="cart"><img src="icons/cart.png"></a>
+  </header>
+  <!-- ナビ背景 -->
+  <div class="nav-background"></div>
+  <!-- 旗下半分 -->
+  <div class="top-frag-bottom">
+    <img src="icons/top-frag-bottom.png">
+  </div>
+  <!-- ナビゲーション -->
+  <nav>
+    <a href="#jump-online" class="online">
+      <h3>オンラインストア</h3>
+      <p>Online Store</p>
+    </a>
+    <a href="#jump-news" class="nav-news">
+      <h3>ニュース</h3>
+      <p>News</p>
+    </a>
+    <a href="#jump-recommend" class="shop">
+      <h3>今月の特集</h3>
+      <p>Recommend</p>
+    </a>
+  </nav>
+
+  <!-- ここからコンテンツ -->
+  <div class="contents">
+    <!-- スライド -->
+    <div class="slide">
+      <img class="slide-top" src="icons/080-04.png">
+      <div id="jump-news"></div>
+      <div class="slide-main">
+        <!-- スライダーのメインコンテナー -->
+        <div class="swiper-container">
+          <!-- 追加で必須の囲みタグ -->
+          <div class="swiper-wrapper">
+            <!-- ↓ここがスライドする部分 -->
+            <div class="swiper-slide"><img src="images/tama01.png"></div>
+            <div class="swiper-slide"><img src="images/clothes2.png"></div>
+            <div class="swiper-slide"><img src="images/ring01.png"></div>
+          </div>
+          <!-- ↓ページネーション -->
+          <div class="swiper-pagination"></div>
+          <!-- ↓ナビゲーションボタン -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <!-- ↓スクロールバー -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+      <img class="slide-bottom" src="icons/080-05.png">
+    </div>
+    <!-- ニュース -->
+    <div class="news">
+      <p class="title">ニュース<br><span>News</span></p>
+      <div class="articles">
+        <div class="article1">
+          <p>昨日の日付
+            <span>昨日の記事</span>
+          </p>
+        </div>
+        <div class="article2">
+          <p>今日の日付
+            <span>今日の記事</span>
+          </p>
+        </div>
+        <div class="article3">
+          <p>明日の日付
+            <span>明日の記事</span>
+          </p>
+        </div>
+      </div>
+      <a href="#">MORE</a>
+    </div>
+    <img id="jump-online" class="partition" src="icons/frag.png">
+    <!-- オンラインストア -->
+    <div class="onlinestore">
+      <p class="title">オンラインストア<br><span>Online Store</span></p>
+      <div class="list">
+        <div class="hair">
+          <a href="https://minne.com/@nekoniribbon" target="_blank" rel="noopener noreferrer"><img src="images/hair01.png"></a>
+          <p>ヘアアクセサリー<br><span>Hair Accessory</span></p>
+          <a href="https://minne.com/@nekoniribbon" target="_blank" rel="noopener noreferrer">MORE</a>
+        </div>
+        <div class="ring">
+          <a href="https://minne.com/@nekoniribbon" target="_blank" rel="noopener noreferrer"><img src="images/hair01.png"></a>
+          <p>リング<br><span>Ring</span></p>
+          <a href="https://minne.com/@nekoniribbon" target="_blank" rel="noopener noreferrer">MORE</a>
+        </div>
+        <div class="pierce">
+          <a href="https://minne.com/@nekoniribbon" target="_blank" rel="noopener noreferrer"><img src="images/hair01.png"></a>
+          <p>ピアス<br><span>Pierce</span></p>
+          <a href="https://minne.com/@nekoniribbon" target="_blank" rel="noopener noreferrer">MORE</a>
+        </div>
+      </div>
+    </div>
+    <img id="jump-recommend" class="partition" src="icons/frag.png">
+   <!-- 今月の特集 -->
+    <div class="recommend">
+      <p class="title">今月の特集<br><span>Recommend</span></p>
+      <div class="recommend-top">
+        <p>夏におすすめのアイテム</p>
+      </div>
+      <div class="items">
+        <div class="item-hair">
+          <a href="#"><img src="images/hair01.png"></a>
+          <p>ヘアアクセサリー<br><span>Hair Accessory</span></p>
+          <div class="price">
+            <p>￥1000-</p>
+          </div>
+        </div>
+        <div class="item-ring">
+          <a href="#"><img src="images/ring01.png"></a>
+          <p>リング<br><span>Ring</span></p>
+          <div class="price">
+            <p>￥2000-</p>
+          </div>
+        </div>
+        <div class="item-pierce">
+          <a href="#"><img src="images/pierce01.png"></a>
+          <p>ピアス<br><span>Pierce</span></p>
+          <div class="price">
+            <p>￥3000-</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="partition-end">
+      <img class="partition" src="icons/080-05.png">
+    </div>
+  </div>
+
+  <!-- ここからフッター -->
+  <footer>
+    <div class="footer">
+      <a href="#">プライバシーポリシー</a>
+      <a href="#">利用規約</a>
+      <a href="#">ショップ概要</a>
+      <div class="footer-end">
+        <a href="#">お問い合わせ</a>
+      </div>
+    </div>
+    <div class="co">
+      <p>ねこにりぼん</p>
+    </div>
+    <div class="copyright">
+      <p>&copy;2021 kumaya/gami7</p>
+    </div>
+  </footer>
+  
+  <!-- JavaScript埋め込みコードテスト -->
+  <script>console.log("ねこにりぼんのスクリプトテスト");</script>
+  
+  <!-- Swiperの読み込み -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- JavaScript -->
+  <script>
+  //Swiper用のクラス指定
+  var mySwiper = new Swiper('.swiper-container', {
+    // カスタマイズ用、追加オプション
+    //direction: 'vertical',//←スライド方向のオプション
+    loop: true,//←ループオプション
+
+    // ページネーション用のクラス指定
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    //ナビゲーション用のクラス指定
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    //スクロールバー用のクラス指定
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })
+  </script>
+
+</body>
+</html>
